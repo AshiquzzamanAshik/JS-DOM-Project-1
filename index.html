@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARS-To-Do-List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-r from-green-400 to-blue-500 min-h-screen flex items-center justify-center"">
+
+    <div class="w-full max-w-md mx-auto p-4 bg-white rounded shadow-md">
+        <!-- Header -->
+        <header class="text-center mb-4">
+            <h1 class="text-2xl font-bold">Ashik To-Do List</h1>
+        </header>
+
+        <!-- Input Section -->
+        <section class="mb-4">
+            <div class="flex">
+                <input type="text" id="todo-input" class="border p-2 flex-grow mr-2 rounded" placeholder="Add a new task...">
+                <button id="add-btn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 flex items-center">
+                    <img src="images/block-user.png" alt="Add" class="w-4 h-4 mr-2">
+                </button>
+            </div>
+        </section>
+
+        <!-- To-Do List -->
+        <ul id="todo-list" class="list-none">
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
